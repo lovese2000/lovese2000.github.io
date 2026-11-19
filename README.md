@@ -22,7 +22,7 @@ npm run build    # 生成静态站点到 _site/
 
 - 工作流：[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)。push 到 `main` 自动构建并发布，也可以在 Actions 页面手动 `Run workflow`。
 - 流程：`npm ci` → `npm run build` → 上传 `_site/` 为 Pages artifact → 由 `actions/deploy-pages` 发布。不需要 `gh-pages` 分支，也不需要把 `_site` 提交进仓库。
-- **一次性设置**：仓库 Settings → Pages → Build and deployment → Source 选择 **GitHub Actions**。如果第一次 deploy 提示 Pages 未启用，就是这个原因。
+- Pages 已在首次推送时启用。如果以后在 Settings → Pages 把 Source 改成 “Deploy from a branch”，需要改回 **GitHub Actions**，否则 `deploy-pages` 会失败。
 - 发布地址：<https://lovese2000.github.io/>
 
 工作流使用 Node 22；`package-lock.json` 必须一起提交，`npm ci` 依赖它。
