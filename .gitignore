@@ -1,0 +1,7 @@
+node_modules/
+_site/
+.npm-cache/
+shots/
+.chrome-*/
+.edge-*/
+.DS_Store

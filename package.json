@@ -1,0 +1,16 @@
+{
+  "name": "li-biao-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "李飚 / Li Biao — 建筑生成设计与数字建造 · static portfolio built with Eleventy",
+  "scripts": {
+    "clean": "node scripts/clean.mjs",
+    "build": "node scripts/clean.mjs && eleventy",
+    "dev": "node scripts/clean.mjs && eleventy --serve --port=8080"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.8",
+    "markdown-it": "^14.3.3"
+  }
+}

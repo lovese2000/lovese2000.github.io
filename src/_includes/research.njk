@@ -1,0 +1,24 @@
+<section class="section" id="research">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-no">{{ site.researchSection.no }}</span>
+      <div class="sec-titles">
+        <h2><span class="lang-zh">{{ site.researchSection.titleZh }}</span><span class="lang-en">{{ site.researchSection.titleEn }}</span></h2>
+        <p class="sec-kicker">{{ site.researchSection.kicker }}</p>
+      </div>
+    </div>
+    <div class="research-list">
+      {% for row in research %}
+      <article class="research-row reveal">
+        <span class="rr-no">{{ row.no }}</span>
+        <div>
+          <div class="rr-head"><h3><span class="lang-zh">{{ row.titleZh }}</span><span class="lang-en">{{ row.titleEn }}</span></h3><span>{{ row.label }}</span></div>
+          <p class="rr-desc"><span class="lang-zh">{{ row.descZh }}</span><span class="lang-en">{{ row.descEn }}</span></p>
+          <ul class="rr-tags">{% for tag in row.tags %}<li>{{ tag }}</li>{% endfor %}</ul>
+        </div>
+        {{ row.glyph | safe }}
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

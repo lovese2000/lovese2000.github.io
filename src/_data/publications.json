@@ -1,0 +1,202 @@
+[
+  {
+    "year": "2025",
+    "type": "Book",
+    "typeCn": "著作",
+    "title": "智慧设计与环境交互",
+    "source": "China Architecture & Building Press",
+    "authors": "Biao Li, Hao Hua, Li Li"
+  },
+  {
+    "year": "2025",
+    "type": "Journal Article",
+    "typeCn": "期刊论文",
+    "title": "ArchiWeb: A web platform for AI-driven early-stage architectural design",
+    "source": "Frontiers of Architectural Research",
+    "authors": "Yichen Mo, Biao Li"
+  },
+  {
+    "year": "2025",
+    "type": "Journal Article",
+    "typeCn": "期刊论文",
+    "title": "From knowledge encoding to procedural generation for early-stage layout design: A case of linear shopping centres",
+    "source": "Frontiers of Architectural Research",
+    "authors": "Baizhou Zhang, Biao Li"
+  },
+  {
+    "year": "2025",
+    "type": "Journal Article",
+    "typeCn": "期刊论文",
+    "title": "Web-based computational design tools for architectural design studio: enhancing pedagogical framework",
+    "source": "Nexus Network Journal",
+    "authors": "Baizhou Zhang, Yichen Mo, Biao Li"
+  },
+  {
+    "year": "2025",
+    "type": "Journal Article",
+    "typeCn": "期刊论文",
+    "title": "基于波函数坍缩算法的围合型街区生成方法探索",
+    "source": "Architecture Technique",
+    "authors": "Chongjian Wang, Mengman Liu, Biao Li"
+  },
+  {
+    "year": "2025",
+    "type": "Conference Paper",
+    "typeCn": "会议论文",
+    "title": "Topological Encoding for Street Network Generation: Adapting to tensor field and optimization for urban design",
+    "source": "CAADRIA 2025, Tokyo, Japan",
+    "authors": "Yichen Mo, Biao Li, Baizhou Zhang, Qiyan Zhang"
+  },
+  {
+    "year": "2024",
+    "type": "Journal Article",
+    "typeCn": "期刊论文",
+    "title": "ArchIndex: 基于多源数据的城市街区检索引擎",
+    "source": "新建筑 New Architecture",
+    "authors": "Yichen Mo, Ludger Hovestadt, Biao Li, Peng Tang"
+  },
+  {
+    "year": "2024",
+    "type": "Conference Paper",
+    "typeCn": "会议论文",
+    "title": "SIMForms: A Web-based Application Fusing Forms, Metrics, and Visuals for Early-stage Design",
+    "source": "CAADRIA 2024, Singapore, Singapore",
+    "authors": "Baizhou Zhang, Yichen Mo, Biao Li, Yanyu Wang, Chao Zhang, Ji Shi"
+  },
+  {
+    "year": "2023",
+    "type": "Journal Article",
+    "typeCn": "期刊论文",
+    "title": "城市形态生成设计的案例推理策略研究——以街区尺度为例",
+    "source": "南方建筑 South Architecture",
+    "authors": "Baizhou Zhang, Yichen Mo, Biao Li"
+  },
+  {
+    "year": "2022",
+    "type": "Journal Article",
+    "typeCn": "期刊论文",
+    "title": "建筑工业化视角下的高层住宅立面自动生成",
+    "source": "南方建筑 South Architecture",
+    "authors": "Jiaqian Wu, Biao Li, Yichen Mo"
+  },
+  {
+    "year": "2022",
+    "type": "Conference Paper",
+    "typeCn": "会议论文",
+    "title": "几何原型与形态编码在商业建筑平面生成中的应用探索",
+    "source": "CDAC 2022, Wuxi, China",
+    "authors": "Baizhou Zhang, Biao Li"
+  },
+  {
+    "year": "2022",
+    "type": "Conference Paper",
+    "typeCn": "会议论文",
+    "title": "基于 JSON 的建筑数据交换格式轻量化研究",
+    "source": "CDAC 2022, Wuxi, China",
+    "authors": "Yichen Mo, Biao Li"
+  },
+  {
+    "year": "2022",
+    "type": "Conference Paper",
+    "typeCn": "会议论文",
+    "title": "基于整数规划的停车场车位排布优化算法研究",
+    "source": "CDAC 2022, Wuxi, China",
+    "authors": "He Siyuan, Biao Li"
+  },
+  {
+    "year": "2021",
+    "type": "Journal Article",
+    "typeCn": "期刊论文",
+    "title": "Urban Morphological Feature Extraction and Multi-Dimensional Similarity Analysis Based on Deep Learning Approaches",
+    "source": "Sustainability",
+    "authors": "Chenyi Cai, Zifeng Guo, Baizhou Zhang, Xiao Wang, Biao Li, Peng Tang"
+  },
+  {
+    "year": "2021",
+    "type": "Conference Paper",
+    "typeCn": "会议论文",
+    "title": "ArchIndex: A Web Data-driven Retrieval System for City Blocks",
+    "source": "CUPUM 2021, Helsinki, Finland",
+    "authors": "Yichen Mo, Baizhou Zhang, Biao Li"
+  },
+  {
+    "year": "2021",
+    "type": "Conference Paper",
+    "typeCn": "会议论文",
+    "title": "Archibase: A City-Scale Spatial Database for Architectural Research",
+    "source": "CAADRIA 2021, Hong Kong, China",
+    "authors": "Yichen Mo, Biao Li, Jiaqian Wu, Peng Tang"
+  },
+  {
+    "year": "2021",
+    "type": "Conference Paper",
+    "typeCn": "会议论文",
+    "title": "基于B/S架构的生成设计系统框架—— “艺术与媒介”参数形式生成为例",
+    "source": "CDAC 2021, Beijing",
+    "authors": "Yichen Mo, Biao Li, Daqing Gu"
+  },
+  {
+    "year": "2021",
+    "type": "Conference Paper",
+    "typeCn": "会议论文",
+    "title": "基于大数据特征提取的建筑形态聚类检索方法研究——以大学校园为例",
+    "source": "CAAD 2021, Wuhan, China",
+    "authors": "Baizhou Zhang, Biao Li"
+  },
+  {
+    "year": "2020",
+    "type": "Journal Article",
+    "typeCn": "期刊论文",
+    "title": "基于多智能体与最短路径算法的建筑空间布局初探——以住区生成设计为例",
+    "source": "城市建筑 Urbanism and Architecture",
+    "authors": "Baizhou Zhang, Biao Li"
+  },
+  {
+    "year": "2020",
+    "type": "Conference Paper",
+    "typeCn": "会议论文",
+    "title": "众源数据背景下城市公共空间评价及更新策略研究——以意大利普拉托市为例",
+    "source": "DADA 2020, Changsha, Hunan",
+    "authors": "Wenrui Zhao, Biao Li, Jiaqian Wu, Yichen Mo"
+  },
+  {
+    "year": "2020",
+    "type": "Conference Paper",
+    "typeCn": "会议论文",
+    "title": "基于多数据源的城市空间数据库设计研究——以意大利普拉托为例",
+    "source": "DADA 2020, Changsha, Hunan",
+    "authors": "Yichen Mo, Biao Li"
+  },
+  {
+    "year": "2020",
+    "type": "Conference Paper",
+    "typeCn": "会议论文",
+    "title": "数据驱动的城市主观地图分析方法–以街景图像感知分析为例",
+    "source": "CDAC 2020, Harbin, Heilongjiang",
+    "authors": "Jiaqian Wu, Biao Li, Yichen Mo"
+  },
+  {
+    "year": "2017",
+    "type": "Book",
+    "typeCn": "著作",
+    "title": "建筑·运算·应用：教学与研究Ⅰ",
+    "source": "China Architecture & Building Press",
+    "authors": "Biao Li, Hao Hua, Peng Tang, Li Li"
+  },
+  {
+    "year": "2015",
+    "type": "Book",
+    "typeCn": "著作",
+    "title": "超越网格 - 建筑和信息技术、建筑学数字化应用",
+    "source": "Southeast University Press",
+    "authors": "Ludger Hovestadt, Biao Li, Hao Hua, Chuanbin Qiao"
+  },
+  {
+    "year": "2012",
+    "type": "Book",
+    "typeCn": "著作",
+    "title": "建筑生成设计：基于复杂系统的建筑设计计算机生成方法研究",
+    "source": "Southeast University Press",
+    "authors": "Biao Li"
+  }
+]

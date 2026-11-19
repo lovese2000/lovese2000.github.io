@@ -1,0 +1,58 @@
+[
+  {
+    "no": "01",
+    "titleZh": "建筑生成设计",
+    "titleEn": "Generative Architectural Design",
+    "label": "Generative Design",
+    "descZh": "以算法模型描述设计规则，研究复杂系统中的建筑形态生成、类型编码与方案优化，把设计问题转译为可计算、可迭代的形式探索。",
+    "descEn": "Describing design rules as algorithmic models: form generation, typological encoding and optimisation in complex systems, turning design questions into computable, iterative explorations.",
+    "tags": [
+      "Algorithm",
+      "Shape Grammar",
+      "Optimisation"
+    ],
+    "glyph": "<svg class=\"rr-glyph\" viewBox=\"0 0 120 120\" fill=\"none\" stroke=\"currentColor\" aria-hidden=\"true\"><path d=\"M60 8 108 38 96 96 34 110 10 54Z\"></path><path d=\"M60 8 58 62 96 96M58 62 10 54M58 62 34 110M58 62 108 38\"></path><circle cx=\"58\" cy=\"62\" r=\"3\" fill=\"currentColor\" stroke=\"none\"></circle></svg>"
+  },
+  {
+    "no": "02",
+    "titleZh": "“数字链”一体化数控建造",
+    "titleEn": "Digital Chain & CNC Fabrication",
+    "label": "Fabrication",
+    "descZh": "打通参数模型、结构优化、构件编码、机器人或数控加工与现场建造的连续工作流，让算法生成的形态真正落地。",
+    "descEn": "Connecting parametric models, structural optimisation, component encoding, robotic or CNC machining and on-site assembly into one continuous workflow, so that algorithmically generated form can be built.",
+    "tags": [
+      "Digital Chain",
+      "Robotic Fabrication",
+      "CNC"
+    ],
+    "glyph": "<svg class=\"rr-glyph\" viewBox=\"0 0 120 120\" fill=\"none\" stroke=\"currentColor\" aria-hidden=\"true\"><path d=\"M14 88 38 34l28 46 40-58\"></path><circle cx=\"14\" cy=\"88\" r=\"4\"></circle><circle cx=\"38\" cy=\"34\" r=\"4\"></circle><circle cx=\"66\" cy=\"80\" r=\"4\"></circle><circle cx=\"106\" cy=\"22\" r=\"4\"></circle><path d=\"M14 88 66 80 38 34M66 80 106 22\" stroke-dasharray=\"3 4\"></path></svg>"
+  },
+  {
+    "no": "03",
+    "titleZh": "城市计算与数据分析",
+    "titleEn": "Urban Computing & Data Analysis",
+    "label": "Urban Computing",
+    "descZh": "面向城市形态的多源数据、特征提取与相似性检索，发展 ArchIndex、Archibase 等数据平台，为城市设计与历史地段研究提供量化依据。",
+    "descEn": "Multi-source data, morphological feature extraction and similarity retrieval for urban form. Platforms such as ArchIndex and Archibase provide a quantitative basis for urban design and historic-area research.",
+    "tags": [
+      "ArchIndex",
+      "Archibase",
+      "Morphology"
+    ],
+    "glyph": "<svg class=\"rr-glyph\" viewBox=\"0 0 120 120\" fill=\"none\" stroke=\"currentColor\" aria-hidden=\"true\"><path d=\"M10 20h100v80H10zM10 47h100M10 73h100M38 20v80M66 20v80M92 20v80\"></path><path d=\"M38 47h28v26H38z\" fill=\"currentColor\" stroke=\"none\" opacity=\".25\"></path></svg>"
+  },
+  {
+    "no": "04",
+    "titleZh": "计算性设计教学与工具",
+    "titleEn": "Computational Design Pedagogy",
+    "label": "Pedagogy",
+    "descZh": "自 2006 年参与东南大学与 ETH CAAD 的生成设计合作教学；近年以 ArchiWeb 系列浏览器工具支持设计课程，让参数化生成与 AI 图像进入日常教学。",
+    "descEn": "Involved in cooperative generative-design teaching between Southeast University and the ETH CAAD chair since 2006. More recently, the ArchiWeb browser tools bring parametric generation and AI imagery into the design studio.",
+    "tags": [
+      "ArchiWeb",
+      "SIMForms",
+      "Studio"
+    ],
+    "glyph": "<svg class=\"rr-glyph\" viewBox=\"0 0 120 120\" fill=\"none\" stroke=\"currentColor\" aria-hidden=\"true\"><rect x=\"12\" y=\"16\" width=\"96\" height=\"72\" rx=\"2\"></rect><path d=\"M12 34h96M30 48h26v26H30zM66 48h26M66 58h26M66 68h18\"></path><path d=\"M48 100h24M60 100v-8\"></path></svg>"
+  }
+]

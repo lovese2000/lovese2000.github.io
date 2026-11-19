@@ -1,0 +1,36 @@
+{%- set docTitleZh = site.meta.titleZh -%}
+{%- set docTitleEn = site.meta.titleEn -%}
+{%- if title -%}
+  {%- set docTitleZh = title + ' — ' + site.brand.name -%}
+  {%- set docTitleEn = (titleEn or title) + ' — Li Biao' -%}
+{%- endif -%}
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh" data-title-zh="{{ docTitleZh }}" data-title-en="{{ docTitleEn }}">
+<head>
+<meta charset="utf-8">
+<script>document.documentElement.classList.add('js');</script>
+<noscript><style>.js .reveal{opacity:1;transform:none;transition:none}</style></noscript>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ docTitleZh }}</title>
+<meta name="description" content="{{ site.meta.description }}">
+<meta name="author" content="{{ site.meta.author }}">
+<meta name="theme-color" content="{{ site.meta.themeColor }}">
+<meta property="og:title" content="{{ site.meta.ogTitle }}">
+<meta property="og:description" content="{{ site.meta.ogDescription }}">
+<meta property="og:type" content="{{ site.meta.ogType }}">
+<link rel="icon" href="{{ site.meta.favicon | safe }}">
+<script type="application/ld+json">{{ site.meta.jsonLd | safe }}</script>
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main"><span class="lang-zh">{{ site.skip.zh }}</span><span class="lang-en">{{ site.skip.en }}</span></a>
+
+{% include "header.njk" %}
+
+{{ content | safe }}
+
+{% include "footer.njk" %}
+
+<script src="/assets/main.js" defer></script>
+</body>
+</html>

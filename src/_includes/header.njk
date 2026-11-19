@@ -1,0 +1,16 @@
+<header class="site-head" id="siteHead">
+  <a class="brand" href="/" aria-label="Li Biao — back to top">
+    <span class="brand-mark">{{ site.brand.mark }}</span>
+    <span class="brand-text">{{ site.brand.name }}<span>{{ site.brand.sub }}</span></span>
+  </a>
+  <nav class="site-nav" aria-label="Sections">
+    {% for item in site.nav %}
+    <a href="{{ item.href }}"{% if navActive == item.key %} class="is-active"{% endif %}><span class="lang-zh">{{ item.zh }}</span><span class="lang-en">{{ item.en }}</span></a>
+    {% endfor %}
+  </nav>
+  <div class="lang-switch" role="group" aria-label="{{ site.langSwitch.label }}">
+    <button class="lang-btn is-on" data-lang="zh" aria-pressed="true">{{ site.langSwitch.zh }}</button>
+    <span aria-hidden="true">/</span>
+    <button class="lang-btn" data-lang="en" aria-pressed="false">{{ site.langSwitch.en }}</button>
+  </div>
+</header>

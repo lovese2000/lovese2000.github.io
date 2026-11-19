@@ -1,0 +1,40 @@
+---
+layout: base.njk
+---
+<main id="main">
+  <section class="section page-section profile-page" id="profile">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-no">01</span>
+        <div class="sec-titles">
+          <h1><span class="lang-zh">{{ title }}</span><span class="lang-en">{{ titleEn }}</span></h1>
+          <p class="sec-kicker">{{ kicker }}</p>
+        </div>
+        <p class="sec-side"><span class="lang-zh">{{ side }}</span><span class="lang-en">{{ sideEn }}</span></p>
+      </div>
+      <div class="profile-grid">
+        <aside class="profile-aside reveal">
+          <div class="seal" aria-hidden="true">{{ seal }}<small>{{ sealSmall }}</small></div>
+          <dl class="facts">
+            {% for fact in facts %}
+            <div>
+              <dt><span class="lang-zh">{{ fact.label }}</span><span class="lang-en">{{ fact.labelEn }}</span></dt>
+              <dd><span class="lang-zh">{% for line in fact.value %}{{ line }}{% if not loop.last %}<br>{% endif %}{% endfor %}</span><span class="lang-en">{% for line in fact.valueEn %}{{ line }}{% if not loop.last %}<br>{% endif %}{% endfor %}</span></dd>
+            </div>
+            {% endfor %}
+          </dl>
+          <a class="aside-mail" href="mailto:{{ email }}">{{ email }}</a>
+        </aside>
+        <div class="profile-main reveal">
+          <div class="prose lang-zh">{{ content | safe }}</div>
+          <div class="prose lang-en">{{ proseEn | md | safe }}</div>
+          <ol class="timeline">
+            {% for item in timeline %}
+            <li><span class="tl-year">{{ item.year }}</span><span class="tl-what"><span class="lang-zh">{{ item.zh }}</span><span class="lang-en">{{ item.en }}</span></span></li>
+            {% endfor %}
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

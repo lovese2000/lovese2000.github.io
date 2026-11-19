@@ -1,0 +1,50 @@
+---
+layout: base.njk
+---
+<main id="main">
+  <section class="section page-section project-view" id="project">
+    <div class="wrap">
+      <nav class="project-back" aria-label="Back">
+        <a href="/#works"><span class="lang-zh">← 返回作品</span><span class="lang-en">← Back to works</span></a>
+      </nav>
+
+      <header class="project-head reveal">
+        <p class="dlg-kicker"><span class="lang-zh">{{ categories[category].zh }}</span><span class="lang-en">{{ categories[category].en }}</span> · {{ year }}</p>
+        <h1 class="dlg-title"><span class="lang-zh">{{ title }}</span><span class="lang-en">{{ titleEn }}</span></h1>
+        <p class="dlg-en">{{ titleEn }}</p>
+      </header>
+
+      <div class="dlg-shell project-shell reveal">
+        <div class="dlg-gallery">
+          <div class="dlg-main"><img id="galleryMain" src="{{ images[0] }}" alt="{{ title }} — 1"></div>
+          {% if images | length > 1 %}
+          <div class="dlg-thumbs" id="galleryThumbs">
+            {% for image in images %}
+            <button type="button"{% if loop.first %} class="is-on"{% endif %} data-src="{{ image }}" aria-label="Image {{ loop.index }}"><img src="{{ image }}" alt="" loading="lazy"></button>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+        <div class="dlg-info">
+          <div class="dlg-desc">
+            <div class="lang-zh">{{ content | safe }}</div>
+            <div class="lang-en"><p>{{ descriptionEn }}</p></div>
+          </div>
+          <dl class="dlg-meta">
+            <div><dt>Year / 年份</dt><dd>{{ year }}</dd></div>
+            <div><dt>Location / 地点</dt><dd><span class="lang-zh">{{ location or '—' }}</span><span class="lang-en">{{ locationEn or '—' }}</span></dd></div>
+            <div class="wide"><dt>Team / 团队</dt><dd>{{ team }}</dd></div>
+          </dl>
+          <div class="dlg-tags">{% for keyword in keywords %}<span>{{ keyword }}</span>{% endfor %}</div>
+          {% if url %}<a class="btn btn--red dlg-link" href="{{ url }}" target="_blank" rel="noopener"><span class="lang-zh">打开项目</span><span class="lang-en">Open project</span> ↗</a>{% endif %}
+          {% set nav = page.url | neighbors(collections.projects) %}
+          <div class="dlg-nav">
+            {% if nav.prev %}<a href="{{ nav.prev.url }}" aria-label="Previous project" title="{{ nav.prev.data.title }}">←</a>{% else %}<span class="dlg-nav-spacer"></span>{% endif %}
+            <span>{{ nav.index | pad2 }} / {{ nav.total | pad2 }}</span>
+            {% if nav.next %}<a href="{{ nav.next.url }}" aria-label="Next project" title="{{ nav.next.data.title }}">→</a>{% else %}<span class="dlg-nav-spacer"></span>{% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

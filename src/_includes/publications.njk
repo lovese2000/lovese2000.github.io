@@ -1,0 +1,41 @@
+<section class="section" id="publications">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-no">{{ site.publicationsSection.no }}</span>
+      <div class="sec-titles">
+        <h2><span class="lang-zh">{{ site.publicationsSection.titleZh }}</span><span class="lang-en">{{ site.publicationsSection.titleEn }}</span></h2>
+        <p class="sec-kicker">{{ site.publicationsSection.kicker }}</p>
+      </div>
+      <p class="sec-side"><span class="lang-zh">{{ site.publicationsSection.sideZh }}</span><span class="lang-en">{{ site.publicationsSection.sideEn }}</span></p>
+    </div>
+    <div class="pub-tools reveal">
+      <label class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>
+        <input id="pubSearch" type="search" autocomplete="off" placeholder="{{ site.publicationsSection.searchPlaceholderZh }}" data-ph-zh="{{ site.publicationsSection.searchPlaceholderZh }}" data-ph-en="{{ site.publicationsSection.searchPlaceholderEn }}" aria-label="Search publications">
+      </label>
+      <div class="pub-types" role="group" aria-label="Filter publications">
+        <button class="chip is-active" data-pubtype="all"><span class="lang-zh">全部</span><span class="lang-en">All</span><em>{{ publications | length }}</em></button>
+        <button class="chip" data-pubtype="Book"><span class="lang-zh">著作</span><span class="lang-en">Books</span><em>{{ publications | countBy('type', 'Book') }}</em></button>
+        <button class="chip" data-pubtype="Journal Article"><span class="lang-zh">期刊</span><span class="lang-en">Journals</span><em>{{ publications | countBy('type', 'Journal Article') }}</em></button>
+        <button class="chip" data-pubtype="Conference Paper"><span class="lang-zh">会议</span><span class="lang-en">Conferences</span><em>{{ publications | countBy('type', 'Conference Paper') }}</em></button>
+      </div>
+    </div>
+    <p class="pub-count" id="pubCount" aria-live="polite"><span class="lang-zh">显示 {{ publications | length }} / {{ publications | length }} 条</span><span class="lang-en">Showing {{ publications | length }} of {{ publications | length }}</span></p>
+    <ol class="pub-list" id="pubList">
+      {% for pub in publications %}
+      {% set searchText = pub.title + ' ' + pub.source + ' ' + pub.authors + ' ' + pub.year + ' ' + pub.typeCn %}
+      <li class="pub" data-type="{{ pub.type }}" data-search="{{ searchText | lower }}">
+        <div class="pub-year">{{ pub.year }}</div>
+        <div>
+          <div class="pub-type"><span class="lang-zh">{{ pub.typeCn }}</span><span class="lang-en">{{ pub.type }}</span></div>
+          <h3>{{ pub.title }}</h3>
+          <p class="pub-source">{{ pub.source }}</p>
+          <p class="pub-authors">{{ pub.authors }}</p>
+        </div>
+      </li>
+      {% endfor %}
+      <li class="pub-empty" id="pubEmpty" hidden><span class="lang-zh">{{ site.publicationsSection.emptyZh }}</span><span class="lang-en">{{ site.publicationsSection.emptyEn }}</span></li>
+    </ol>
+    <p class="pub-note"><span class="lang-zh">{{ site.publicationsSection.noteZh }}</span><span class="lang-en">{{ site.publicationsSection.noteEn }}</span></p>
+  </div>
+</section>

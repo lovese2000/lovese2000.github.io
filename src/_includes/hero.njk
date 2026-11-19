@@ -1,0 +1,38 @@
+<section class="hero" id="hero">
+  <canvas id="field" aria-hidden="true"></canvas>
+  <span class="hero-side" aria-hidden="true">{{ site.hero.side }}</span>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">
+        <span class="lang-zh">{{ site.hero.eyebrowZh }}</span>
+        <span class="lang-en">{{ site.hero.eyebrowEn }}</span>
+      </p>
+      <h1 class="hero-name">
+        <span class="hn-cn">{{ site.hero.nameZh }}</span>
+        <span class="hn-en">{{ site.hero.nameEn }}</span>
+      </h1>
+      <p class="hero-tagline">
+        <span class="lang-zh">{{ site.hero.taglineZh | safe }}</span>
+        <span class="lang-en">{{ site.hero.taglineEn | safe }}</span>
+      </p>
+      <div class="hero-actions">
+        {% for action in site.hero.actions %}
+        <a class="btn{% if action.red %} btn--red{% endif %}" href="{{ action.href }}"><span class="lang-zh">{{ action.zh }}</span><span class="lang-en">{{ action.en }}</span>{% if action.arrow %}<span aria-hidden="true">{{ action.arrow }}</span>{% endif %}</a>
+        {% endfor %}
+      </div>
+      <div class="hero-stats" aria-label="Key figures">
+        {% for stat in site.hero.stats %}
+        <div><b>{{ stat.value }}</b><span><span class="lang-zh">{{ stat.zh }}</span><span class="lang-en">{{ stat.en }}</span></span></div>
+        {% endfor %}
+      </div>
+    </div>
+    <figure class="hero-figure">
+      <div class="portrait-frame"><img src="{{ site.hero.portrait }}" alt="{{ site.hero.portraitAlt }}" width="500" height="500"></div>
+      <figcaption><span>{{ site.hero.captionZh }}</span><span>{{ site.hero.captionEn }}</span></figcaption>
+    </figure>
+  </div>
+  <div class="hero-foot">
+    <span class="scroll-cue"><i aria-hidden="true"></i><span class="lang-zh">{{ site.hero.footLeftZh }}</span><span class="lang-en">{{ site.hero.footLeftEn }}</span></span>
+    <span>{{ site.hero.footRight }}</span>
+  </div>
+</section>

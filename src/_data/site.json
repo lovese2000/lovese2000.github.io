@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "titleZh": "李飚 — 建筑生成设计与数字建造 / Li Biao",
+    "titleEn": "Li Biao — Generative Design & Digital Fabrication",
+    "description": "李飚，东南大学建筑学院教授、博士生导师，建筑运算与应用研究所（Lab AAA）所长。建筑生成设计、数字链数控建造与城市计算。",
+    "author": "Li Biao 李飚",
+    "themeColor": "#f3f0e8",
+    "ogTitle": "李飚 — 建筑生成设计与数字建造",
+    "ogDescription": "东南大学建筑学院教授 · 建筑运算与应用研究所（Lab AAA）所长",
+    "ogType": "profile",
+    "favicon": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23c4402a'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='28' fill='%23f3f0e8' text-anchor='middle'%3ELB%3C/text%3E%3C/svg%3E",
+    "jsonLd": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Person\",\n  \"name\": \"李飚\",\n  \"alternateName\": \"Li Biao\",\n  \"jobTitle\": \"Professor of Architecture\",\n  \"affiliation\": {\n    \"@type\": \"Organization\",\n    \"name\": \"School of Architecture, Southeast University\"\n  },\n  \"email\": \"jz.generator@gmail.com\",\n  \"knowsAbout\": [\n    \"Generative architectural design\",\n    \"Digital chain fabrication\",\n    \"Urban computing\"\n  ]\n}"
+  },
+  "skip": {
+    "zh": "跳到主要内容",
+    "en": "Skip to content"
+  },
+  "brand": {
+    "mark": "LB",
+    "name": "李飚",
+    "sub": "LI BIAO"
+  },
+  "nav": [
+    {
+      "href": "/about/",
+      "zh": "简介",
+      "en": "Profile",
+      "key": "profile"
+    },
+    {
+      "href": "/#research",
+      "zh": "研究",
+      "en": "Research",
+      "key": "research"
+    },
+    {
+      "href": "/#works",
+      "zh": "作品",
+      "en": "Works",
+      "key": "works"
+    },
+    {
+      "href": "/#publications",
+      "zh": "出版",
+      "en": "Publications",
+      "key": "publications"
+    },
+    {
+      "href": "/#contact",
+      "zh": "联系",
+      "en": "Contact",
+      "key": "contact"
+    }
+  ],
+  "langSwitch": {
+    "label": "Language / 语言",
+    "zh": "中",
+    "en": "EN"
+  },
+  "hero": {
+    "eyebrowZh": "东南大学建筑学院 · 建筑运算与应用研究所",
+    "eyebrowEn": "School of Architecture, Southeast University · Lab AAA",
+    "nameZh": "李飚",
+    "nameEn": "LI BIAO",
+    "taglineZh": "以算法研究建筑，<br>以<em>数字链</em>连接设计与建造。",
+    "taglineEn": "Researching architecture through algorithms;<br>linking design and construction through the <em>digital chain</em>.",
+    "actions": [
+      {
+        "href": "#works",
+        "red": true,
+        "zh": "查看作品",
+        "en": "Selected works",
+        "arrow": "↘"
+      },
+      {
+        "href": "#publications",
+        "red": false,
+        "zh": "出版物",
+        "en": "Publications",
+        "arrow": ""
+      }
+    ],
+    "stats": [
+      {
+        "value": "15",
+        "zh": "代表项目",
+        "en": "Projects"
+      },
+      {
+        "value": "25",
+        "zh": "署名出版",
+        "en": "Publications"
+      },
+      {
+        "value": "1997",
+        "zh": "任教至今",
+        "en": "Teaching since"
+      }
+    ],
+    "portrait": "/imgs/portrait.jpg",
+    "portraitAlt": "李飚 / Li Biao",
+    "captionZh": "李飚 / Li Biao",
+    "captionEn": "Prof. Dr.",
+    "side": "GENERATIVE DESIGN — DIGITAL CHAIN — NANJING",
+    "footLeftZh": "向下滚动",
+    "footLeftEn": "Scroll",
+    "footRight": "SEU ARCH · LAB AAA · 32°N, NANJING"
+  },
+  "worksSection": {
+    "no": "03",
+    "titleZh": "作品",
+    "titleEn": "Selected Works",
+    "kicker": "2017—2025 / 建成 · 工具 · 研究",
+    "sideZh": "从数字构筑物的编码与建造，到浏览器端的生成设计工具。",
+    "sideEn": "From coded and fabricated digital structures to browser-based generative design tools.",
+    "introZh": "以下项目均来自 Lab AAA 项目档案，团队名单含 Biao Li。点击任一项目可查看图集、地点、团队与简介。",
+    "introEn": "All projects are drawn from the Lab AAA archive and list Biao Li in the team. Select a project to view its image set, location, team and description.",
+    "noteZh": "项目与图像资料来自 Lab AAA · archialgo.com",
+    "noteEn": "Projects and images courtesy of Lab AAA · archialgo.com"
+  },
+  "researchSection": {
+    "no": "02",
+    "titleZh": "研究",
+    "titleEn": "Research",
+    "kicker": "Four threads / 四条主线"
+  },
+  "publicationsSection": {
+    "no": "04",
+    "titleZh": "出版",
+    "titleEn": "Publications",
+    "kicker": "Books · Journals · Conferences",
+    "sideZh": "收录 Lab AAA 出版档案中署名含 Biao Li 的 25 条记录。",
+    "sideEn": "25 records from the Lab AAA publication archive listing Biao Li as an author.",
+    "searchPlaceholderZh": "搜索标题、期刊或作者",
+    "searchPlaceholderEn": "Search title, venue or author",
+    "noteZh": "资料来自 Lab AAA 出版档案 · 完整列表见 archialgo.com/publications",
+    "noteEn": "Source: Lab AAA publication archive · full list at archialgo.com/publications",
+    "emptyZh": "没有匹配的记录，试试其他关键词。",
+    "emptyEn": "No records match. Try another keyword."
+  },
+  "contact": {
+    "kicker": "05 / Contact",
+    "titleZh": "讨论生成设计、数字建造<br>与教学合作，<em>欢迎来信。</em>",
+    "titleEn": "For conversations on generative design, digital fabrication and teaching, <em>get in touch.</em>",
+    "email": "jz.generator@gmail.com",
+    "columns": [
+      {
+        "heading": "Affiliation / 所在",
+        "zh": "东南大学建筑学院<br>建筑运算与应用研究所（Lab AAA）<br>江苏省南京市四牌楼 2 号，210096",
+        "en": "School of Architecture, Southeast University<br>Institute of Architectural Algorithms &amp; Applications (Lab AAA)<br>2 Sipailou, Nanjing, Jiangsu 210096, China"
+      },
+      {
+        "heading": "Links / 链接",
+        "links": [
+          {
+            "href": "https://arch.seu.edu.cn/lb/main.psp",
+            "label": "SEU Faculty Page ↗"
+          },
+          {
+            "href": "https://archialgo.com/",
+            "label": "Lab AAA ↗"
+          },
+          {
+            "href": "https://archialgo.com/publications/",
+            "label": "Publication Archive ↗"
+          }
+        ]
+      },
+      {
+        "heading": "Research / 研究",
+        "zh": "建筑生成设计<br>“数字链”一体化数控建造<br>城市计算与数据分析",
+        "en": "Generative architectural design<br>Digital-chain CNC fabrication<br>Urban computing and data analysis"
+      }
+    ]
+  },
+  "footer": {
+    "zh": "© 2026 李飚 · 本站为静态个人主页。项目与图像资料来自 Lab AAA（<a href=\"https://archialgo.com/\" target=\"_blank\" rel=\"noopener\">archialgo.com</a>）；个人简介依据东南大学建筑学院官网及公开资料。",
+    "en": "© 2026 Li Biao · A static personal homepage. Project and image credits: Lab AAA (<a href=\"https://archialgo.com/\" target=\"_blank\" rel=\"noopener\">archialgo.com</a>); biography based on the Southeast University School of Architecture website and public sources.",
+    "right": "NANJING · 32°N<br>SEU ARCH / LAB AAA"
+  }
+}

@@ -1,0 +1,39 @@
+<section class="section" id="works">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-no">{{ site.worksSection.no }}</span>
+      <div class="sec-titles">
+        <h2><span class="lang-zh">{{ site.worksSection.titleZh }}</span><span class="lang-en">{{ site.worksSection.titleEn }}</span></h2>
+        <p class="sec-kicker">{{ site.worksSection.kicker }}</p>
+      </div>
+      <p class="sec-side"><span class="lang-zh">{{ site.worksSection.sideZh }}</span><span class="lang-en">{{ site.worksSection.sideEn }}</span></p>
+    </div>
+    <div class="works-intro reveal">
+      <p><span class="lang-zh">{{ site.worksSection.introZh }}</span><span class="lang-en">{{ site.worksSection.introEn }}</span></p>
+    </div>
+    <div class="filter-bar reveal" role="group" aria-label="Filter works">
+      <button class="chip is-active" data-filter="all"><span class="lang-zh">全部</span><span class="lang-en">All</span><em data-count="all">{{ collections.projects | length }}</em></button>
+      {% for key, category in categories %}
+      <button class="chip" data-filter="{{ key }}"><span class="lang-zh">{{ category.zh }}</span><span class="lang-en">{{ category.en }}</span><em data-count="{{ key }}">{{ collections.projects | countBy('data.category', key) }}</em></button>
+      {% endfor %}
+    </div>
+    <div class="works-grid" id="worksGrid">
+      {% for project in collections.projects %}
+      <a class="work" href="{{ project.url }}" data-cat="{{ project.data.category }}" data-index="{{ loop.index0 }}" aria-label="{{ project.data.title }} — {{ project.data.titleEn }}">
+        <div class="work-media work-media--{{ project.data.category }}">
+          <img src="{{ project.data.images[0] }}" alt="{{ project.data.title }} {{ project.data.titleEn }}" loading="lazy" width="1200" height="900">
+          <span class="work-no">{{ loop.index | pad2 }}</span>
+          <span class="work-year">{{ project.data.year }}</span>
+          <span class="work-view"><span class="lang-zh">查看图集</span><span class="lang-en">View series</span> ↗</span>
+        </div>
+        <div class="work-cap">
+          <h3><span class="lang-zh">{{ project.data.title }}</span><span class="lang-en">{{ project.data.titleEn }}</span></h3>
+          <p class="work-sub">{% if project.data.title != project.data.titleEn %}<span class="lang-zh">{{ project.data.titleEn }}</span><span class="lang-en">{{ project.data.title }}</span>{% else %}<span>{{ categories[project.data.category].en }}</span>{% endif %}</p>
+          <p class="work-meta"><span class="lang-zh">{{ project | metaLine('zh') }}</span><span class="lang-en">{{ project | metaLine('en') }}</span></p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    <p class="works-note"><span class="lang-zh">{{ site.worksSection.noteZh }}</span><span class="lang-en">{{ site.worksSection.noteEn }}</span></p>
+  </div>
+</section>
